@@ -1,0 +1,148 @@
+/* =========================
+   BASE STYLES (DESKTOP)
+========================= */
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 220px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background: #1976d2;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #0d47a1;
+}
+
+/* =========================
+   CURRENT WEATHER CARD
+========================= */
+
+.card {
+  background: #f1f1f1;
+  padding: 20px;
+  margin: 20px auto;
+  width: 320px;
+  border-radius: 12px;
+}
+
+/* =========================
+   FORECAST SECTION
+========================= */
+
+.forecast {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.day {
+  background: #e3f2fd;
+  padding: 12px;
+  border-radius: 10px;
+  width: 140px;
+  text-align: center;
+}
+
+/* =========================
+   ICONS
+========================= */
+
+i {
+  margin-right: 6px;
+  color: #1976d2;
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+.dark {
+  background: #121212;
+  color: white;
+  border-radius: 12px;
+}
+
+.dark .card,
+.dark .day {
+  background: #1e1e1e;
+}
+
+.dark input {
+  background: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+.dark i {
+  color: #90caf9;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .card {
+    width: 100%;
+  }
+
+  .forecast {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .day {
+    width: 90%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
